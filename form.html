@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css" />
   </head>
   <body>
-    <form>
+    <form id="myForm">
       <label for="fname">First name:</label><br />
       <input type="text" id="fname" name="fname" /><br />
       <label for="lname">Last name:</label><br />
       <input type="text" id="lname" name="lname" /><br />
       <label for="email">E-mail</label><br />
       <input type="text" id="email" name="email" /><br />
-      <label for="atsauksmes">Atsauksmes</label><br>
+      <label for="atsauksmes">Atsauksmes</label><br />
       <input type="text" id="atsauk" name="atsauksmes" /><br />
-      <select id="limenis" name="limenis" size="3" multiple>
-        <option value="Augsts">Augsts</option>
-        <option value="videjs">Videjs</option>
-        <option value="zems">Zems</option>
-      </select>
-      <br>
-      <button type="button">Submit</button>
+      <label for="level">Limenis</label><br />
+      <input type="radio" id="augsts" name="augsts" value="augsts" />
+      <label for="augsts">Augsts</label><br />
+      <input type="radio" id="videjs" name="videjs" value="videjs" />
+      <label for="videjs">Videjs</label><br />
+      <input type="radio" id="zems" name="zems" value="zems" />
+      <label for="zems">Zems</label><br />
+      <input type="checkbox" id="jaut" name="jaut" value="jaut" />
+      <label for="jaut">Vai vēlaties saņemt paziņojumus uz e-pastu?</label>
+      <br />
+      <button type="button" onclick="formData()">Submit</button>
     </form>
+    <script src="formapp.js"></script>
   </body>
 </html>
